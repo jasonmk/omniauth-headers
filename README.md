@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jasonmk/omniauth-headers.svg?branch=master)](https://travis-ci.org/jasonmk/omniauth-headers)
+
 # OmniAuth::Strategies::Headers
 
 A VERY simple OmniAuth strategy to pull user information from headers. This is useful in
