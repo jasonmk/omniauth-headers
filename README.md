@@ -31,24 +31,30 @@ Or install it yourself as:
 
 As a middleware in your Rack application:
 
+```ruby
   require 'omniauth'
   use OmniAuth::Strategies::Headers,
     headers: { uid: 'HTTP_USER_ID', email: 'HTTP_EMAIL' },
     uid_field: :uid
+```
 
 or in your Rails application:
 
 in Gemfile:
  
+```ruby
   gem 'omniauth-headers'
+```
 
 in config/initializers/omniauth.rb
 
+```ruby
   Rails.application.config.middleware.use OmniAuth::Builder do
     provider :headers,
       headers: { uid: 'HTTP_USER_ID', email: 'HTTP_EMAIL' },
       uid_field: :uid
   end
+```
 
 ## Development
 
