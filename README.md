@@ -7,7 +7,7 @@ situations where you have an authenticating reverse proxy in front of your appli
 that places user information into the request headers.
 
 Technically speaking, you probably don't need omniauth in this case since the whole
-redirect/callback system in unnecessary (every request has the user information already),
+redirect/callback system is unnecessary (every request has the user information already),
 however, if your application uses multiple different authentication schemes, you may find
 it easier to use this than trying to swap omniauth in and out.
 
